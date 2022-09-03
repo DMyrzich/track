@@ -15,7 +15,7 @@ import * as path from 'path';
 @Module({
   imports: [
     ServeStaticModule.forRoot({ rootPath: path.resolve(__dirname, '..', 'static') }),
-    MongooseModule.forRoot('mongodb+srv://dimasik1996:dimasik1996@cluster0.splinqu.mongodb.net/TOP-MUISC?retryWrites=true&w=majority'),
+    MongooseModule.forRoot('NONE'),
     MongooseModule.forFeature([{ name: Comment.name, schema: CommentSchema }, { name: Album.name, schema: AlbumSchema }, { name: Track.name, schema: TrackSchema }]),
     TrackModule, CommentModule, AlbumModule, FileModule
   ],
