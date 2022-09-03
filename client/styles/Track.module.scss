@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+}
+
+.btnCreate {
+    height: 50px;
+    border-radius: 100px;
+    margin-top: auto;
+}
+
+.action {
+    margin-left: 290px;
+    margin-top: 15px;
+}
+
+.actionBtn {
+    height: 50px;
+    border-radius: 100px;
+
+    &:not(:first-child) {
+        margin-left: 5px;
+    }
+}
+
+.card {
+    width: 75%;
+    padding: 25px;
+}
+
+.img {
+    border-radius: 16px;
+    width: 260px;
+    height: 130px;
+}
+
+.createAction {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img {
+        width: 230px;
+    }
+
+    .action {
+        margin-left: 0px;
+        margin-bottom: 15px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+    .info {
+        padding: 15px 0px 15px;
+    }
+
+    .btnCreate {
+        align-items: center;
+    }
+}

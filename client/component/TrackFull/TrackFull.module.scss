@@ -1,0 +1,53 @@
+.card {
+    display: flex;
+    width: 75%;
+    padding: 25px;
+    margin-top: 18px;
+}
+
+.btnTitle {
+    display: flex;
+    align-items: center;
+}
+
+.infoTrack {
+    padding-left: 20px;
+}
+
+.infoTrackItem {
+    padding-bottom: 5px;
+    white-space: pre-wrap;
+}
+
+.back {
+    position: relative;
+    margin-right: 35px;
+    cursor: pointer;
+    justify-content: flex-start;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background: #0070f3;
+    border-radius: 50%;
+}
+
+.commentForm {
+    display: flex;
+    padding: 15px 0px;
+    justify-content: space-between;
+}
+
+.addFormComment {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.line {
+    &:not(:last-of-type) {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    }
+}

@@ -1,0 +1,88 @@
+.player {
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    align-items: center;
+    gap: 25px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .action {
+        display: flex;
+        gap: 10px;
+    }
+
+    .next {
+        margin-left: 0px !important;
+    }
+
+    .infoTrack {
+        padding: 0 !important;
+    }
+
+    .time,
+    .volume {
+        display: none !important;
+    }
+}
+
+.play {
+    &:hover {
+        transition: 0.3s;
+        transform: scale(1.2);
+    }
+}
+
+.next {
+    margin-left: 15px;
+
+    &:hover {
+        transition: 0.3s;
+        transform: scale(1.2);
+    }
+}
+
+.back {
+    transform: rotate(180deg);
+
+    &:hover {
+        transition: 0.3s;
+        transform: scale(1.2) rotate(180deg);
+    }
+}
+
+.volume {
+    margin-left: auto;
+    margin-right: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.progress {
+    width: 100%;
+    position: absolute;
+    bottom: 43px;
+    left: 0px;
+}
+
+.time {
+    margin-right: 15px;
+    width: 80px;
+}
+
+.infoTrack {
+    display: flex;
+    width: 150px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 15px 0px 15px;
+}
+
+.repeat {
+    color: #1976D2;
+}

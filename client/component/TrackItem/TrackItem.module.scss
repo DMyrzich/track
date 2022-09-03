@@ -1,0 +1,92 @@
+.card {
+    display: grid;
+    grid-template-columns: 75px 100px auto 130px 130px;
+    grid-template-areas: "play pic names progress action";
+    align-items: center;
+    height: 70px;
+    margin-top: 15px;
+    width: 75%;
+    align-items: center;
+    justify-items: center;
+}
+
+@media screen and (max-width: 640px) {
+
+    .card {
+        display: grid;
+        height: auto;
+        padding: 15px 0px 0px 10px;
+        grid-template-columns: 45px 80px auto;
+        grid-template-rows: auto 55px;
+        grid-template-areas:
+            "play pic names"
+            "progress progress action";
+    }
+
+
+}
+
+.play {
+    width: 35px;
+    height: 35px;
+    grid-area: play;
+}
+
+.progress {
+    justify-self: right;
+    padding-right: 50px;
+    grid-area: progress;
+}
+
+.action {
+    display: flex;
+    grid-area: action;
+}
+
+.pic {
+    grid-area: pic;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.names {
+    grid-area: names;
+    width: auto;
+    margin-right: auto;
+}
+
+
+.btnTitle {
+    display: flex;
+    align-items: center;
+}
+
+.infoTrack {
+    padding: 15px 0px 15px;
+}
+
+.infoTrackItem {
+    padding-bottom: 5px;
+}
+
+.back {
+    position: relative;
+    margin-right: 35px;
+    cursor: pointer;
+    justify-content: flex-start;
+
+    color: white;
+    width: 40px;
+    height: 40px;
+    background: #0070f3;
+    border-radius: 50%;
+}
+
+.btn {
+    color: white;
+
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+}
